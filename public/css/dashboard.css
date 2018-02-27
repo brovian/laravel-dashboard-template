@@ -1,0 +1,98 @@
+html,body{height:100%;min-height:100%;}
+.container{margin:0;height:100%;min-height:100%;}
+.wrap{margin:0;height:100%;min-height:100%;}
+.menu{height:100%;min-height:100%;}
+.contentpage{height:100%;min-height:100%;overflow-y:scroll;background:#ebeff2;-webkit-box-shadow:5px 0 5px #dedede inset;-moz-box-shadow:5px 0 5px #dedede inset;box-shadow:5px 0 5px #dedede inset;}
+a{text-decoration:none;color:#435966}
+h1,h2,h3,h4,h5{padding:10px 0;color:#435966}
+table{font-size:14px;}
+.green{color:#10c469}
+.red{color:#ff5b5b}
+.alignright{text-align:right}
+/*.menu*/
+.menu .logo{text-align:center;padding-top:20px;}
+.menu .logo img{height:40px;}
+.menu .adminbox{text-align:center;padding-top:25px;font-size:14px;}
+.menu .adminmodule{text-align:center;margin-top:10px;}
+.menu .menulist{margin-top:50px;}
+.menu .menulist ul{list-style:none;margin:0;padding:0;}
+.menu .menulist ul li{padding:16px 0 16px 25%;}
+.menu .menulist ul li.current{background:#ebeff2}
+.menu .menulist ul li a{font-size:16px;letter-spacing:1px;position:relative;display:block}
+.menu .menulist ul li a img.menuicon{position:absolute;top:5px;left:-18%}
+.menu .menulist ul li a img.arrow{position:absolute;top:5px;right:5%}
+
+/*.contentpage*/
+.contentpage .chart{}
+.contentpage h3{padding:10px 20px;}
+.contentpage .rounded{position:relative;padding:0 1em 1em 1em;background:#fff;border-radius:5px;margin-left:2%;margin-bottom:1%;-webkit-box-shadow:5px 5px 5px #dedede;-moz-box-shadow:5px 5px 5px #dedede;box-shadow:5px 5px 5px #dedede;}
+.contentpage .rounded .quickcount{font-size:25px;position:relative;width:100%}
+.contentpage .rounded .quickcount div{float:right}
+.contentpage .rounded .quickcount .today{clear:right;}
+.contentpage .rounded .quickcount .yesterday .value{color:#aaa}
+.contentpage .rounded .quickcount .yesterday .date{color:#aaa}
+.contentpage .rounded .quickcount .date{font-size:14px;}
+.contentpage .rounded .quickcount .trend{position:absolute;top:5px;width:50px;height:50px;}
+.contentpage .rounded .quickcount .trend.up{background:url(/img/uptrend.png) no-repeat;}
+.contentpage .rounded .quickcount .trend.down{background:url(/img/downtrend.png) no-repeat;}
+.contentpage .rounded .quickcount .trend.nochange{background:url(/img/nochange.png) no-repeat;}
+.contentpage .rounded .datatable{width:100%;text-align:center;border-collapse:collapse;margin-top:15px;}
+.contentpage .rounded .datatable th{border-bottom:2px solid #ebeff2;padding:8px 0;}
+.contentpage .rounded .datatable td{border-bottom:1px solid #ebeff2;padding:8px 0;}
+.contentpage .rounded .datatable.statsdata td{cursor:pointer}
+.contentpage .rounded .datatable td:first-child{text-align:left;padding-left:20px;}
+.contentpage .rounded .datatable .uri{width:45%}
+.contentpage .rounded .searchform{position:absolute;right:15px;top:10px;}
+.contentpage .rounded .searchform input{border-radius:20px}
+.contentpage .rounded .searchform button{position:absolute;right:9px;top:6px;height:20px;width:20px;background:url(/img/search.png) no-repeat center center;border:0}
+.contentpage .rounded .page{text-align:center;margin:10px;margin-top:25px;}
+.contentpage .rounded .page a{display:inline-block;padding:6px 12px;;border:1px solid #ddd;height:20px;line-height:20px;}
+.contentpage .rounded .page a{border-left:none;}
+.contentpage .rounded .page a.firstpage{border:1px solid #ddd;border-top-left-radius:3px;border-bottom-left-radius:3px}
+.contentpage .rounded .page a.lastpage{border-top-right-radius:3px;border-bottom-right-radius:3px}
+.contentpage .rounded .page a.current{background:#71b6f9;color:#fff}
+
+.contentpage .addform .row{margin:10px 0}
+.contentpage .addform .row input{width:90%;height:20px;border-radius:5px}
+.contentpage .addform .row textarea{width:90%;height:100px;border-radius:5px}
+.contentpage .addform .row .c2 div{line-height:38px;text-align:right;padding-right:20px;color:#435966}
+.contentpage .addform .row button{background:#35b8e0;border:1px solid #35b8e0;color:#fff;padding:6px 25px;border-radius:5px;cursor:pointer}
+.contentpage .addform .row button.parentbutton{background:#2a4;border:1px solid #2a4;}
+.contentpage .addform .row #toggle-button{display:none;}
+.contentpage .addform .row .button-label{position: relative;top:9px;display:inline-block;width:80px;height:25px;background-color: #ccc;box-shadow: #ccc 0px 0px 0px 2px;border-radius: 20px;overflow: hidden;}
+.contentpage .addform .row .circle{position: absolute;top:0;left:0;width:25px;height:25px;border-radius:50%;background-color: #fff;}
+.contentpage .addform .row .button-label .text {line-height:25px;font-size:14px;text-shadow: 0 0 2px #ddd;}
+.contentpage .addform .row .on {color: #fff;display:none;text-indent:10px;}
+.contentpage .addform .row .off {color:#fff;display:inline-block;text-indent:34px;}
+.contentpage .addform .row .button-label .circle{left:0;transition:all 0.3s;}
+.contentpage .addform .row #toggle-button:checked + label.button-label .circle{left:54px;}
+.contentpage .addform .row #toggle-button:checked + label.button-label .on{display:inline-block;}
+.contentpage .addform .row #toggle-button:checked + label.button-label .off{display:none;}
+.contentpage .addform .row #toggle-button:checked + label.button-label{background-color: #10c469;}
+.contentpage .addform .categoryselect{min-width:40%;height:38px;border-radius:5px}
+
+.contentpage .demodetail button.btn-gray{background-color:rgba(218, 230, 236, 0.3);border-color:rgba(218, 230, 236, 0.5);color:#333}
+.contentpage .demodetail div.text{padding:8px 0;}
+.contentpage .demodetail .row .c1 div{line-height:38px;text-align:right;padding-right:20px;color:#435966}
+.contentpage .demodetail .row input.radio{width:3%}
+.contentpage .demodetail .row div.text label{vertical-align: top;cursor:pointer}
+.contentpage .demodetail .row select{border-radius:5px;}
+
+.contentpage .rounded .demotable a{display:block;padding: 2px 7px 5px;margin-left:8px;}
+.contentpage .rounded .demotable tr:hover{background:#ebeff2}
+
+.contentpage .msg{padding:5px 10px;border-radius:4px;}
+.contentpage .msg.success{background-color:rgba(95, 190, 170, 0.3);border:1px solid rgba(95, 190, 170, 1);color:rgba(22, 150, 57, 1);font-size:14px;}
+
+.contentpage .datatable .btn{padding:5px;}
+
+.contentpage .qrtitle h5{font-size:18px;}
+
+
+
+
+
+
+@media (min-width: 1310px){
+	.container{width:auto}
+}
