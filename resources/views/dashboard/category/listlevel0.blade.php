@@ -26,7 +26,7 @@ Zepto(function($){
 				<a href="/dashboard/"><img src="/img/logo-v.png"></a>
 			</div>
 			<div class="adminbox">
-				<span>Hi,Vian</span>
+				<span>Hi,Admin</span>
 				<div class="adminmodule">
     				<a href="/dashboard/admin"><img src="/img/setting.png"></a>
     				<a href="/dashboard/logout"><img src="/img/exit.png"></a>

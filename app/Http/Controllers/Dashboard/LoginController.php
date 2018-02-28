@@ -29,8 +29,8 @@ class LoginController extends Controller
         if ($_POST){
             $validator = Validator::make($request->all(), [
                 'captcha' => 'bail|required|captcha',
-                'username'=>'bail|required|in:vian',
-                'password'=>'bail|required|in:1q2w3e4r',
+                'username'=>'bail|required|in:admin',
+                'password'=>'bail|required|in:12345678',
             ],[
                 'captcha.required'=>'Please input captcha',
                 'username.required'=>'Please input username',
@@ -43,7 +43,7 @@ class LoginController extends Controller
             if ($validator->fails()) {
                 return redirect('dashboard/login')->withErrors($validator)->withInput();
             } else {
-                $request->session()->put('admin', 'Vian');
+                $request->session()->put('admin', 'Admin');
                 return redirect('dashboard/index');
             }
         }
